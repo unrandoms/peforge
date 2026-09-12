@@ -1,3 +1,4 @@
+#![allow(clippy::all)]
 /*!
 Dumps the RunTime Type Information, each associated vtable and class hierarchy for every type found.
 

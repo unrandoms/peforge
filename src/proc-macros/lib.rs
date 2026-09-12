@@ -1,3 +1,5 @@
+#![allow(clippy::all)]
+#![allow(unexpected_cfgs)]
 use proc_macro::*;
 
 /// Compile time pattern parser.

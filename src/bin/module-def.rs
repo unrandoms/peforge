@@ -1,3 +1,4 @@
+#![allow(clippy::all)]
 /*!
 Prints a [Module-Defintion](https://msdn.microsoft.com/en-us/library/28d6s79h.aspx) file for the given input DLL.
 

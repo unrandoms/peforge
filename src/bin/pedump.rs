@@ -1,3 +1,4 @@
+#![allow(clippy::all)]
 /*!
 Dumps all PE related headers.
  */

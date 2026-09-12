@@ -37,6 +37,14 @@ Here's a resource to learn more about signature scanning: [wiki.alliedmods.net](
 */
 
 #![allow(ellipsis_inclusive_range_patterns)]
+#![allow(unexpected_cfgs)]
+#![allow(clippy::absurd_extreme_comparisons)]
+#![allow(clippy::manual_range_contains)]
+#![allow(clippy::deprecated_cfg_attr)]
+#![allow(clippy::len_zero)]
+#![allow(clippy::needless_return)]
+#![allow(clippy::match_like_matches_macro)]
+#![allow(clippy::legacy_numeric_constants)]
 
 use std::prelude::v1::*;
 

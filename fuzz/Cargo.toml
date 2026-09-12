@@ -1,0 +1,18 @@
+[package]
+name = "peforge-fuzz"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+pelite = { path = "..", features = ["std"] }
+
+[[bin]]
+name = "parse_pe"
+path = "fuzz_targets/parse_pe.rs"
+test = false
+doc = false

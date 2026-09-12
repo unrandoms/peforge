@@ -14,6 +14,8 @@ Due to small but incompatible differences the two formats are not unified.
 
 #![recursion_limit = "128"]
 #![allow(ellipsis_inclusive_range_patterns)]
+#![allow(clippy::all)]
+#![allow(unexpected_cfgs)]
 #![cfg_attr(not(feature = "std"), no_std)]
 extern crate no_std_compat as std;
 
@@ -63,6 +65,11 @@ pub mod resources;
 pub mod rich_structure;
 pub mod security;
 pub mod strings;
+
+#[cfg(feature = "std")]
+pub mod imphash;
+#[cfg(feature = "std")]
+pub use imphash::imphash;
 
 // FIXME! Causes STATUS_STACK_BUFFER_OVERRUN in CI on nightly x86_64-pc-windows-msvc
 // #[cfg(test)]
